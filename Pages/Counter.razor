@@ -1,0 +1,93 @@
+@page "/electraqtwallet"
+
+<h1>Electra QT Wallet</h1>
+<br>
+<!--
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="@IncrementCount">Click me</button>
+
+@code {
+    int currentCount = 0;
+
+    void IncrementCount()
+    {
+        currentCount++;
+    }
+ }
+-->
+<h2><b>File Locations</b></h2>
+
+<h3>Electra Folder</h3>
+<p>This folder contains your wallet.dat, Electra.conf, and your copy of the blockchain your wallet downloaded.</p>
+<ul>
+   <li>Windows: C:/Users/YOUR_USER_NAME/AppData/Roaming/Electra</li>
+   <li>Mac:     ~/Library/Application Support/Electra</li>
+   <li>Linux:   ~/.electra</li>
+</ul>
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Electra Folder - Windows
+        </button>
+      </h2>
+    </div>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+		<p>To locate the folder, you can navigate to the location, C:/Users/YOUR_USER_NAME/AppData/Roaming/Electra or follow these steps:</p>
+		<ul>
+		   <li>Open Run by pressing the Windows Key on the keyboard and the letter r together at the same time</li>
+		   <li>Type in the Run box: %APPDATA%</li>
+		   <li>Then press Enter and if done correctly, will take you to your Electra folder.</li>
+		</ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Electra Folder - Mac
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        <p>To locate the folder, you can navigate to the location ~/Library/Application Support/Electra or do the following:</p>
+		<ul>
+		   <li>Click desktop and click on Go to folder or press Shift ⇧ + Command ⌘ + G</li>
+		   <li>Type ~/Library/Application Support/Electra and then click on Go</li>
+		</ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         Electra Folder - Linux
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+      <p>To locate the folder, you can navigate to the location ~/.electra - Folder is hidden by system default - or do the following:</p>
+		<ul>
+		   <li>Open up terminal and type cd ~/.electra</li>
+		   <li>Or open it up in the file browser, pressing Shift ⇧ + h to view hidden files and folders</li>
+		</ul>
+      </div>
+    </div>
+  </div>
+</div>
+<h2><b>Backup Wallet</b></h2>
+<p>To backup your wallet, you have a number of options:</p>
+<ul>
+   <li>On Windows go to File -- Backup Wallet</li>
+   <li>On Mac/Linux go to Electra in the top Menu, then Backup Wallet</li>
+   <li>Export your private keys for each address or dump the wallet</li>
+</ul>
+
+<a href="https://medium.com/electraproject/electra-safety-tips-dfd7fb4c9bfc">Safety Tips</a>
