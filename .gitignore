@@ -39,3 +39,6 @@ msbuild.wrn
 #Debug Files
 bin/Debug/*
 obj/Debug/*
+
+#Obj Files
+obj/*
